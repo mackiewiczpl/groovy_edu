@@ -1,0 +1,1 @@
+[{ "id" : "11a23c46aa0", "names" : ["docker.io/library/openjdk:11"], "readonly" : "false" }, { "id" : "11c23c76zi4", "names" : ["docker.io/library/openjdk:17"], "readonly" : "true" }]
