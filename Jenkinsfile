@@ -4,8 +4,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                HOST=hostname
-                echo "Hello World From $HOST"
+                HOST = sh (
+                    script: 'hostname',
+                    returnStdout: true
+                ).trim()
+                echo "Hostname: ${HOST}"
+
             }
         }
     }
