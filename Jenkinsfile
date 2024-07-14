@@ -1,11 +1,11 @@
 pipeline {
-    agent {label 'agent1'}
+    agent {label 'kubeagent'}
 
     stages {
         stage('Hello') {
             steps {
-                def hostname = sh "hostname"
-                echo 'Hello World From feature branch'
+                HOST=hostname
+                echo "Hello World From $HOST"
             }
         }
     }
